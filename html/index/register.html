@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>灵派PC端</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/index/login.css">
+	<link rel="stylesheet" type="text/css" href="../../css/common/font-awesome-4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class='header'>
+	<div class='clearfix headerContent'>
+		<div class='headerLeft'>
+			<a href="index.html"><img src="../../images/raw_1478675952.png" class='logoImg'>
+				<span class='logo familyText'>灵派LOGO</span>
+			</a>
+			<span class='welcomeToLogin'>欢迎注册</span>
+		</div>
+	</div>
+</div>
+<div class='inner'>
+	<div class='loginPage'>
+		<div class='loginBox registerBox'>
+			<ul class='loginBoxUl registerBoxUl'>
+				<li>
+					<span class='loginBoxTitle registerTitle'>注册灵派</span>
+					<form id='registerForm'>
+						<div class='loginDiv'><input type="text" name="mobile" placeholder="请输入手机号" required isMobile="true" class='pl' id='mobile'></div>
+						<div class='loginDiv'><input type="password" name="password" placeholder="请输入密码" required id='password'></div>
+						<div class='loginDiv'><input type="password" placeholder="请再次确认密码" required equalTo='#password' id='rePassword'></div>
+						<div class='loginDiv loginDivCode'>
+							<input type="text" name="registerPasCode" placeholder="请输入验证码" class='loginPasCode' required>
+							<div class='codeImg registerCodeImg'><img src="../../images/raw_1537638308.jpeg" ></div>
+						</div>
+						<div class='loginDiv loginDivCode'>
+							<input type="text" name="code" placeholder="请输入短信动态码" class='loginPasCode' required>
+							<div class='codeImg phoneCode registerCodeImg' id='phoneCodeBut'><span>获取动态码</span></div>
+						</div>
+						<div class='loginJump registerJump'>
+							<span></span>我已阅读并同意《灵派用户协议》
+							<a class='forgetPassword' href="login.html">已有账号直接登录</a>
+						</div>
+						<input type="hidden" name="smsid" value='' id='smsid'>
+						<input type="submit" name="" value='注册' class='loginSub'>
+					</form>
+				</li>
+			</ul>				
+		</div>
+	</div>
+</div>
+<div class='footer'>
+	<div class='footer-tmallinfo clearfix'>
+		<div class='footerLeft'>
+			<img src="../../images/raw_1478675952.png">
+			<div class='footerLeftLogo'>
+				<h1 class='familyText'>灵派LOGO</h1>
+				<p>The most popular tools</p>
+			</div>
+		</div>
+		<div class='footerRight'>
+			<dl>
+				<dt>关于我们</dt>
+				<dd>公司介绍</dd>
+				<dd>公司历程</dd>
+			</dl>	
+			<dl>
+				<dt>客服中心</dt>
+				<dd>协议规则</dd>
+				<dd>常见问题</dd>
+			</dl>
+			<dl>
+				<dt>联系我们</dt>
+				<dd>办公地点</dd>
+				<dd>业务合作</dd>
+			</dl>
+		</div>	
+	</div>
+</div>
+<div class='blueFooter '>
+	<div class='blueFooter-info clearfix'>
+		<div class='blueFooterLeft'>
+			<p>北京科技有限公司</p>
+			<p>Copyright 2018.All rights reserved. 京ICP备XXXXXXXX号</p>
+		</div>
+		<div class='blueFooterRight'>
+			<ul>
+				<li><em class='footerPhone fa fa-volume-control-phone'></em>400-400-4000</li>
+				<li><em class='footerEmile fa fa-envelope-o'></em>support@ling'q'ai.com</li>
+			</ul>
+		</div>
+	</div>	
+</div>
+<script type="text/javascript" src='../../js/third/jquery.min.js'></script>
+<script type="text/javascript" src='../../js/third/layer-v3.1.1/layer/layer.js'></script>
+<script type="text/javascript" src='../../js/third/jquery.validate.js'></script>
+<script type="text/javascript" src='../../js/third/messages_zh.js'></script>
+<script type="text/javascript" src='../../js/third/jquery.cookie.js'></script>
+<script type="text/javascript" src='../../js/common/service.js'></script>
+<script type="text/javascript" src='../../js/common/common.js'></script>
+<script type="text/javascript" src='../../js/common/url.js'></script>
+<script type="text/javascript" src='../../js/common/smsCode.js'></script>
+<script type="text/javascript" src='../../js/business/index/register.js'></script>
+</body>
+</html>

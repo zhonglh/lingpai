@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>灵派PC端</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/mangercenter/mangercenter.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/common/font-awesome-4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class='header'>
+	<div class='clearfix headerContent'>
+		<div class='headerLeft'>
+			<a href="index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
+				<span class='logo familyText'>灵派LOGO</span>
+			</a>
+			<span class='partner'>申请成为品牌合作方</span>
+		</div>
+		<div class='headerRight clearfix'>
+			<ul class='headerRightLeft headerRightLeft2'>
+				<li><a href=''>专家顾问</a></li>
+				<li class='switchInfo'><a href=''>发现牛人</a></li>
+				<li class='exitLogin'><a href=''>发现项目</a></li>
+				<li class='headerMargin'>工作中心</li>
+				<li>通知<span class='notice'>1</span></li>
+			</ul>
+			<div class='headerRight2 headerRight2Img'>
+				<img src="../../../images/raw_1467091988.jpeg"><span>小威</span>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class='inner manageInner'>
+	<div class='conMiddle clearfix'>
+		<div class='editJobInfo'>
+			<h1>编辑任务信息</h1>
+			<form id='taskInfoForm'>
+				<ul class='editJobInfoUl'>
+					<li class='jobWantLi'>
+						<dl class='selectStatus workExperience jobWant'>
+							<dd>
+								<span>所属企业*</span> 阿里巴巴网络技术有限公司
+								<input type="hidden" name="coompanyName" value='京东方开始的开发商的开发几十块'>
+							</dd>
+							<dd class='industry'>
+								<span>所属行业*</span>
+								<select name='business' required>
+									<option>IT</option>
+								</select>
+							</dd>
+							<dd id='industry'>
+								<span>职位类型*</span>
+								<select></select>
+								<select></select>
+								<select name='industry' required></select>
+							</dd>
+							<dd>
+								<span>职位名称*</span>
+								<input type="text" name="jobName" required placeholder="请填写职位名称">
+							</dd>
+							<dd class='city'>
+								<span>工作地点*</span>
+								<select></select>
+								<select></select>
+								<select name='city' id='city' required></select>
+							</dd>
+							<dd>
+								<span>标准日薪</span>
+								<input type="text" name="jobName" required placeholder="请填写标准日薪" number='true'>元
+							</dd>
+							<dd>
+								<span>工期天数</span>
+								<select class='timeJob' name='day' id='day' required>
+									<option>100</option>
+									<option>200</option>
+									<option>300</option>
+								</select>天
+							</dd>
+							<dd>
+								<span>雇佣人数</span>
+								<select class='timeJob' name='userNum' id='userNum' required>
+									<option>100</option>
+									<option>200</option>
+									<option>300</option>
+								</select>人
+							</dd>
+							<dd>
+								<span>职位描述：</span>
+								<textarea placeholder="请输入职位描述" name='intro' id='intro' required></textarea>
+							</dd>
+							<dd>
+								<span>个人职责：</span>
+								<textarea placeholder="请输入个人职责" name='obligation' id='obligation' required></textarea>
+							</dd>
+							<dd>
+								<div class='skills'>
+									<span>所需技能*</span>
+									<ul class='skillsUl labelSkill'>
+										<li>java</li>
+										<li>php</li>
+										<li>js</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<li>java</li>
+										<input type="text" name="skills" class='sk' required>
+									</ul>
+								</div>
+							</dd>
+							<dd>
+								<span>工作方式*</span>
+								<input type="radio" name="workTypeId" id='fullTime' class='jobWay' value='1' required><label for='fullTime'>全程坐班</label>
+								<input type="radio" name="workTypeId" id='partTime' class='jobWay' value='2'><label for='partTime'>定期坐班</label>
+								<input type="radio" name="workTypeId" id='remote' class='jobWay' value='3'><label for='remote'>远程工作</label>
+							</dd>
+							<dd>
+								指定企业招聘
+								<select name='specifiedCompany' required class='specified'>
+									<option value='0'>不指定</option>
+									<option value='1'>腾讯</option>
+								</select>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<div class='subDiv taskDiv'><input type="submit" name="" value='提交' class='addJobBtn'></div>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src='../../../js/third/jquery.min.js'></script>
+<script type="text/javascript" src='../../../js/third/layer-v3.1.1/layer/layer.js'></script>
+<script type="text/javascript" src='../../../js/third/jquery.validate.js'></script>
+<script type="text/javascript" src='../../../js/third/messages_zh.js'></script>
+<script type="text/javascript" src='../../../js/third/distpicker.js'></script>
+<script type="text/javascript" src='../../../js/common/common.js'></script>
+<script type="text/javascript" src='../../../js/common/service.js'></script>
+<script type="text/javascript" src='../../../js/common/url.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/mangercenter.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/company/taskEdit.js'></script>
+</body>
+</html>

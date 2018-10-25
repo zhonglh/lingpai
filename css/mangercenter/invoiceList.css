@@ -1,0 +1,9 @@
+.invoiceContent{padding:25px 30px;width:740px;}
+.invoiceContent tr{line-height:40px;text-align:left;font-size:0;}
+table{width:100%;margin-bottom:20px;font-size:0;border-collapse:collapse;}
+.invoiceContent th{font-weight: 400;width:88px;border-bottom:1px solid #bbb;font-size:18px;}
+.invoiceContent td{border-bottom:1px solid #bbb;font-size:18px;}
+.collect{float:right;cursor: pointer;width: 160px; display: inline-block;line-height: 42px; height: 42px;border-radius: 4px; font-size: 14px;border: 1px solid #bbb;text-align: center;}
+#pages{text-align: center}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {background: rgb(63, 81, 181);}
+

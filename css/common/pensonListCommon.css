@@ -1,0 +1,15 @@
+.expertListUl li{border: 1px solid #bbb;display: block;margin-right:0;width:auto;padding:24px 30px;margin-top:24px;}
+.expertListUl li img{width:119px;border-radius: 100%;float:right;}
+.expertListLeft {float: left;: 718px;}
+.expertListTopTitle {font-size: 20px;font-weight: bold;margin-bottom: 18px;}
+.expertListTopTitle span {border: 1px solid rgb(168, 161, 161);color: rgb(168, 161, 161);font-weight: normal;display: inline-block;line-height: 28px;text-align: center;margin-left: 18px;padding: 0px 3px;height: 28px;border-radius: 4px;font-size: 16px;}
+.expertListTopTitle .realName{border:1px solid rgb(229, 28, 35);;color: rgb(229, 28, 35);}
+.expertListTopTitleR{font-weight:normal;width: 336px;float:right;font-family: SourceHanSansSC, sans-serif;font-size: 20px;color: rgb(16, 16, 16);}
+.expertListTopTitleR div{float:right;font-size:18px;}
+.expertListLeft p{line-height:37px;font-size:16px;color:rgb(16, 16, 16);font-family: SourceHanSansSC, sans-serif}
+.listTitle{width:86px;display: inline-block;}
+.listTitleI{margin-left:13px;font-style: normal}
+.expertListButtom{margin-top:22px;margin-bottom:15px;}
+.dayMoney{font-family: SourceHanSansSC, sans-serif;font-size: 28px;color: rgba(63, 81, 181, 1);font-style: normal;line-height: 44px;}
+.expertListButtom span{cursor:pointer;width: 160px;display: inline-block;line-height: 42px;height: 42px;border-radius: 4px;font-size: 14px;border:1px solid #bbb;text-align: center;}
+.collect{float:right;}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>灵派PC端</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/mangercenter/mangercenter.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/common/font-awesome-4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class='header'>
+	<div class='clearfix headerContent'>
+		<div class='headerLeft'>
+			<a href="index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
+				<span class='logo familyText'>灵派LOGO</span>
+			</a>
+			<span class='partner'>申请成为品牌合作方</span>
+		</div>
+		<div class='headerRight clearfix'>
+			<ul class='headerRightLeft headerRightLeft2'>
+				<li><a href=''>专家顾问</a></li>
+				<li class='switchInfo'><a href=''>发现牛人</a></li>
+				<li class='exitLogin'><a href=''>发现项目</a></li>
+				<li class='headerMargin'>工作中心</li>
+				<li>通知<span class='notice'>1</span></li>
+			</ul>
+			<div class='headerRight2 headerRight2Img'>
+				<img src="../../../images/raw_1467091988.jpeg"><span>小威</span>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class='inner manageInner'>
+	<div class='conMiddle clearfix'>
+		<div class='manageCommon'>
+			<div class='manageInnerLeft'>
+				<div class='personalIntroduce clearfix'>
+					<img src="../../../images/raw_1467091988.jpeg" class='personalImg'>
+					<div class='personalName'>
+						<p>小威</p>
+						<p>个人管理中心</p>
+					</div>
+				</div>
+				<dl class='manageInnerLeftList'>
+					<dt class='messageNotice'><a href='notice.html'>消息通知</a></dt>					
+				</dl>
+				<dl class='manageInnerLeftList'>
+					<dt>我的工作</dt>
+					<dd><a href='myCollection.html' class='ddTitle'>我的收藏</a></dd>
+					<dd><a href='myIncome.html' class='ddTitle'>我的收入</a></dd>
+					<dd><span class='ddTitle ddClick'>求职信息</span></dd>
+				</dl>
+				<dl class='manageInnerLeftList editManage'>
+					<dt>修改信息</dt>
+					<dd><a class='jobTitle' href='positionInfoEdit.html'>修改简历信息</a>
+					</dd>
+					<dd><a class='noddTitle' href='baseInfoEdit.html'>修改基础信息</a></dd>
+					<dd><a class='noddTitle' href='realNameAnthEdit.html'>修改实名信息</a></dd>
+					<dd><a class='noddTitle' href='payInfoEdit.html'>修改支付信息</a></dd>
+				</dl>		
+			</div>
+			<div class='mangerRight'>
+				<div class='manageInnerRight'>
+					<h1>添加求职信息</h1>
+					<form id='applyForJobForm'>
+						<ul class='editJobInfoUl'>							
+							<li class='jobWantLi'>
+								<dl class='selectStatus workExperience jobWant'>
+									<dt>请填写工作意向</dt>
+									<dd class='industry'>
+										<span>职位类型</span>
+										<select></select>
+										<select></select>
+										<select name='industry' id='industry1' required></select>
+									</dd>
+									<dd>
+										<span>职位名称：</span>
+										<input type="text" name="post" id='job1' placeholder="请填写职位描述" required>
+									</dd>
+									<dd>
+										<span>工作年限*</span>
+										<select class='timeJob' name='jobYear' id='jobYear1' required>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>年
+									</dd>
+									<dd>
+										<div class='skills'>
+											<span>擅长技能*</span>
+											<ul class='skillsUl labelSkill'>
+												<li>java</li>
+												<li>php</li>
+												<li>js</li>
+												<li>java</li>
+												<li>java</li>
+												<li>java</li>
+												<li>java</li>
+												<li>java</li>
+												<li>java</li>
+												<li>java</li>
+												<li>java</li>
+												<li>java</li>
+												<input type="text" name="skills" id='sk1' class='sk' required>
+											</ul>
+										</div>
+									</dd>
+									<dd class='city'>
+										<span>可工作区域*</span>
+										<select></select>
+										<select></select>
+										<select name='city' id='city1' required></select>
+									</dd>
+									<dd>
+										可接受的工作方式*
+										<input type="radio" name="workTypeId1" id='fullTime1' class='jobWay' required value='1'><label for='fullTime1'>全程坐班</label>
+										<input type="radio" name="workTypeId1" id='partTime1' class='jobWay' value='2'><label for='partTime1'>定期坐班</label>
+										<input type="radio" name="workTypeId1" id='remote1' class='jobWay' value='3'><label for='remote1'>远程工作</label>
+									</dd>
+									<dd>
+										<span>期望日薪*</span>
+										<select class='timeJob' name='daySalary' id='daySalary1' required>
+											<option>100</option>
+											<option>200</option>
+											<option>300</option>
+										</select>元
+									</dd>
+									<dd>
+										<span>工作状态*</span>
+										<select class='timeJob' name='workStatus' id='workStatus1 required'>
+											<option value='1'>在职</option>
+											<option value='2'>休假</option>
+											<option value='3'>求职</option>
+										</select>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class='selectStatus'>
+									<dt>个人推荐*</dt>
+									<dd>
+										<textarea class='recommended' placeholder="请输入一段话个人推荐" required name='recommended'></textarea><br>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+						<div class='subDiv'><input type="submit" name="" value='提交' class='addJobBtn'></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src='../../../js/third/jquery.min.js'></script>
+<script type="text/javascript" src='../../../js/third/layer-v3.1.1/layer/layer.js'></script>
+<script type="text/javascript" src='../../../js/third/jquery.validate.js'></script>
+<script type="text/javascript" src='../../../js/third/messages_zh.js'></script>
+<script type="text/javascript" src='../../../js/third/distpicker.js'></script>
+<script type="text/javascript" src='../../../js/common/common.js'></script>
+<script type="text/javascript" src='../../../js/common/service.js'></script>
+<script type="text/javascript" src='../../../js/common/url.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/mangercenter.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/personal/applyForJob.js'></script>
+</body>
+</html>

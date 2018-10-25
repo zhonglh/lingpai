@@ -1,0 +1,9 @@
+#invoiceForm{width:758px;padding:10px 15px;font-size: 18px}
+.invoiceInfo{line-height: 50px;position: relative;}
+.invoiceInfo>span{width:180px;display: inline-block;}
+.invoiceInfo input{padding:0 8px;width:420px;height:30px;line-height: 30px;border:1px solid #bbb;}
+.courierInfo{margin-left:180px;margin-top:-48px;}
+.editSite{cursor:pointer;position: absolute;right:0;top:15px;width: 54px;height: 28px;color: rgb(255, 255, 255);line-height:28px;background-color: rgb(16, 142, 233);border-radius: 4px;font-size: 12px;text-align: center;}
+.invoiceBtn{float:right;cursor:pointer;margin-left:15px;background: rgb(63, 81, 181);font-style:normal; color:#fff;width:115px;height:40px;line-height: 40px;text-align: center;display: inline-block;}
+.courierInfo span{margin-left:40px;}
+

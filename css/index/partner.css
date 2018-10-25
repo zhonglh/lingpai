@@ -1,0 +1,9 @@
+#brandPartnerForm{padding:27px 25px;}
+.brandPartnerTitle{font-size:18px;line-height:26px;margin-bottom:18px;}
+.brandPartnerList{line-height:50px;position: relative;}
+.brandPartnerList span{width:84px;font-size:18px;display: inline-block;}
+.brandPartnerList input{line-height:30px;vertical-align:middle;width:623px;height:30px;font-size:14px;padding:0 8px;border:1px solid #bbb;margin-right:3px;}
+.brandPartnerBorder{width:757px;border-top:1px solid rgb(187, 187, 187);margin-top:25px;}
+.partnerSub{cursor:pointer;float:right;margin-top:24px;margin-right:10px;padding:0;width: 176px;line-height:42px;height: 42px;border-radius: 4px;font-size: 14px;border: 1px solid #bbb;text-align: center;background: #fff;color:#333;}
+.brandPartnerList label{position:absolute;right:43px;top:1px;}
+.partnerSubDiv{width:757px;}

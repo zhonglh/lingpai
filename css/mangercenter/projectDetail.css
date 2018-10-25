@@ -1,0 +1,31 @@
+.talentJobLeft p {margin-bottom: 20px;font-size: 18px;line-height: 90px;}
+.projectDetailLeft{padding-top:48px;padding-bottom: 20px}
+.projectTopTitle{font-size:28px;}
+.projectTopTitle  .realName{vertical-align: middle;padding:1px 7px;}
+.comMargin{margin-left:92px;line-height: 36px;margin-top: -47px;font-size:18px;}
+.projectList{line-height:55px;font-size:18px;margin-left:15px;position: relative;}
+.marginRight{margin-right:15px;font-style: normal}
+.talentDetailMoney span{width:249px;height: 67px;line-height: 67px;font-size:20px;}
+.talentDetailMoney{margin-top:-128px;}
+.expertListTopTitle{margin-bottom:80px;}
+.editProjectDetail{ font-size:16px;cursor:pointer;margin-top:16px; position: absolute;right:0;top:0;width:124px;height:45px;line-height: 45px;text-align: center;color:rgb(63, 81, 181);border:1px solid rgb(63, 81, 181);border-radius: 4px;}
+.fa-flag:before{margin-right:20px;}
+.evaluationImg{float:left;width:91px;height:91px;border-radius: 100%}
+.comments{min-width:210px;margin-top: 25px;margin-left: 20px;max-width: 550px;}
+.comments span{display: inline-block;width:100%;background: rgb(141, 250, 105);padding:10px;}
+.comments i{border-right-color:rgb(141, 250, 105);}
+.evaluationUl li{overflow: hidden;margin-bottom:25px;}
+.rightTitle{font-size: 18px;text-align: center;margin-top:50px;margin-bottom:10px;}
+.talentDetailRightUl li{display: inline-block;padding:0 6px;margin-bottom: 0}
+.talentDetailRightUl img{width:88px;height:88px;border-radius: 100%;margin-top:20px;}
+.talentDetailRight {padding:40px 20px;width:310px;}
+.closeBtn{width:328px;height:46px;line-height: 46px;text-align:center;background: rgb(63, 81, 181);color:#fff;margin-top:58px;}
+
+
+
+
+
+
+
+
+

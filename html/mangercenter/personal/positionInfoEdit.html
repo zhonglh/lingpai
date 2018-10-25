@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>灵派PC端</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../js/third/layui/css/layui.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/mangercenter/mangercenter.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/common/font-awesome-4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class='header'>
+	<div class='clearfix headerContent'>
+		<div class='headerLeft'>
+			<a href="index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
+				<span class='logo familyText'>灵派LOGO</span>
+			</a>
+			<span class='partner'>申请成为品牌合作方</span>
+		</div>
+		<div class='headerRight clearfix'>
+			<ul class='headerRightLeft headerRightLeft2'>
+				<li><a href=''>专家顾问</a></li>
+				<li class='switchInfo'><a href=''>发现牛人</a></li>
+				<li class='exitLogin'><a href=''>发现项目</a></li>
+				<li class='headerMargin'>工作中心</li>
+				<li>通知<span class='notice'>1</span></li>
+			</ul>
+			<div class='headerRight2 headerRight2Img'>
+				<img src="../../../images/raw_1467091988.jpeg"><span>小威</span>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class='inner manageInner'>
+	<div class='conMiddle clearfix'>
+		<div class='manageInnerLeft'>
+			<div class='personalIntroduce clearfix'>
+				<img src="../../../images/raw_1467091988.jpeg" class='personalImg'>
+				<div class='personalName'>
+					<p>小威</p>
+					<p>个人管理中心</p>
+				</div>
+			</div>
+			<dl class='manageInnerLeftList'>
+				<dt class='messageNotice'><a href='notice.html'>消息通知</a></dt>				
+			</dl>
+			<dl class='manageInnerLeftList'>
+				<dt>我的工作</dt>
+				<dd><a class='ddTitle' href='myCollection.html'>我的收藏</a></dd>
+				<dd><a class='ddTitle' href='myIncome.html'>我的收入</a></dd>
+				<dd><a href='applyForJobList.html' class='ddTitle'>求职信息</a></dd>
+			</dl>
+			<dl class='manageInnerLeftList editManage'>
+				<dt>修改信息</dt>
+				<dd><span class='jobTitle ddClick'>修改简历信息</span></dd>
+				<dd><a class='noddTitle' href='baseInfoEdit.html'>修改基础信息</a></dd>
+				<dd><a class='noddTitle' href='realNameAnthEdit.html'>修改实名信息</a></dd>
+				<dd><a class='noddTitle' href='payInfoEdit.html'>修改支付信息</a></dd>
+			</dl>		
+		</div>
+		<div class='mangerRight'>
+			<div class='manageInnerRight'>
+				<h1>编辑简历信息</h1>
+				<form id='jobWantedInfoForm'>
+					<ul class='editJobInfoUl'>
+						<li>
+							<dl class='selectStatus workExperience'>
+								<div class='fa fa-times-circle deleteGroup'>删除</div>
+								<dt>请填写工作经历</dt>
+								<dd>
+									<span>职位名称：</span><input type="text" name="post" id="post1" placeholder="如：ios高级工程师" required>
+								</dd>
+								<dd>
+									<span>公司名称：</span><input type="text" name="company" id="school1" placeholder="请填写公司名称" required>
+								</dd>
+								<dd>
+									<span>入职时间：</span><input type="text" name="joinTime" id="joinTime1" placeholder="请选择入职时间" required class='joinTime' autocomplete="off">
+								</dd>
+								<dd>
+									<span>离职时间：</span><input type="text" name="leaveTime" id="leaveTime1" placeholder="请选择离职时间" class='leaveTime' required autocomplete="off">
+								</dd>
+								<dd>
+									<span>薪资水平：</span><input type="text" name="salary" id="salary1" placeholder="请输入薪资水平" required number='true'>
+								</dd>
+								<dd>
+									<span>职位描述：</span><textarea placeholder="请输入职位描述" name='intro' id='intro' required></textarea>
+								</dd>
+								<dd>
+									<span>个人职责：</span><textarea placeholder="请输入个人职责" name='obligation' id='obligation1' required></textarea>
+								</dd>
+								<dd>
+									<span>使用技能：</span><input type="text" name="skills" id="skills1" placeholder="请输入使用技能" required>
+								</dd>
+							</dl>
+							<span class='addExperienceBut' id='addExperienceBut'>+增加工作经历</span>
+						</li>
+						<li>
+							<dl class='selectStatus workExperience'>
+								<dt>请填写教育信息<span class='greyColor'>填写最高学历</span></dt>
+								<dd>
+									<span>毕业院校：</span><input type="text" name="school" placeholder="请填写毕业院校" required>
+								</dd>
+								<dd>
+									<span>所学专业：</span><input type="text" name="specialty" placeholder="请填写所学专业" required>
+								</dd>
+								<dd>
+									<span>毕业时间：</span><input type="text" name="time" id="time" placeholder="请选择毕业时间" required autocomplete="off">
+								</dd>
+								<dd>
+									<span>最高学历：</span><select name="educationName" required class='educationName'>
+										<option>大专</option>
+										<option>本科</option>
+										<option>硕士</option>
+										<option>博士</option>
+										<option>博士后</option>
+										<option>MBA</option>
+										<option>EMBA</option>
+										<option>中专</option>
+										<option>中技</option>
+										<option>高中</option>
+										<option>初中</option>
+									</select>
+								</dd>
+							</dl>		
+						</li>
+					</ul>
+					<div class='subDiv'><input type="submit" name="" value='提交' class='addJobBtn'></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src='../../../js/third/jquery.min.js'></script>
+<script type="text/javascript" src='../../../js/third/layer-v3.1.1/layer/layer.js'></script>
+<script type="text/javascript" src='../../../js/third/jquery.validate.js'></script>
+<script type="text/javascript" src='../../../js/third/messages_zh.js'></script>
+<script type="text/javascript" src='../../../js/third/distpicker.js'></script>
+<script type="text/javascript" src='../../../js/third/layui/layui.all.js'></script>
+<script type="text/javascript" src='../../../js/common/common.js'></script>
+<script type="text/javascript" src='../../../js/common/service.js'></script>
+<script type="text/javascript" src='../../../js/common/url.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/mangercenter.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/personal/positionInfo.js'></script>
+</body>
+</html>

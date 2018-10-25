@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>发票</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../../css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/mangercenter/invoiceEdit.css">
+</head>
+<body>
+<form id='invoiceForm' class='clearfix'>
+	<div class='invoiceInfo'>
+		<span>请确认发票抬头：</span><input type="text" name="company" placeholder="请输入发票抬头" required>
+	</div>
+	<div class='invoiceInfo'>
+		<span>请确认纳税人识别号：</span><input type="text" name="dutycode" placeholder="请输入纳税人识别号" required>
+	</div>
+	<div class='invoiceInfo'>
+		<span>请确认发票寄送地址：</span>
+		<div class='courierInfo'>
+			<p>收件人：XXX<span>手机号码：138XXXXXXXX</span></p>
+			<p>具体地址：XXXXXXXXXXXXXXXXX<span>邮编：XXXXXXX</span></p>
+		</div>
+		<div class='editSite'>修改地址</div>
+	</div>
+	<input type="submit" name="" value='确认申请' class='invoiceBtn'>
+</form>
+<script type="text/javascript" src='../../../js/third/jquery.min.js'></script>
+<script type="text/javascript" src='../../../js/third/jquery.validate.js'></script>
+<script type="text/javascript" src='../../../js/third/messages_zh.js'></script>
+<script type="text/javascript" src='../../../js/third/layer-v3.1.1/layer/layer.js'></script>
+<script type="text/javascript" src='../../../js/common/common.js'></script>
+<script type="text/javascript" src='../../../js/common/url.js'></script>
+<script type="text/javascript" src='../../../js/common/service.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/company/invoiceEdit.js'></script>
+</body>
+</html>

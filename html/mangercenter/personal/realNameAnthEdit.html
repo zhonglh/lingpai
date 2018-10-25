@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>灵派PC端</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/mangercenter/mangercenter.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/common/font-awesome-4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class='header'>
+	<div class='clearfix headerContent'>
+		<div class='headerLeft'>
+			<a href="index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
+				<span class='logo familyText'>灵派LOGO</span>
+			</a>
+			<span class='partner'>申请成为品牌合作方</span>
+		</div>
+		<div class='headerRight clearfix'>
+			<ul class='headerRightLeft headerRightLeft2'>
+				<li><a href=''>专家顾问</a></li>
+				<li class='switchInfo'><a href=''>发现牛人</a></li>
+				<li class='exitLogin'><a href=''>发现项目</a></li>
+				<li class='headerMargin'>工作中心</li>
+				<li>通知<span class='notice'>1</span></li>
+			</ul>
+			<div class='headerRight2 headerRight2Img'>
+				<img src="../../../images/raw_1467091988.jpeg"><span>小威</span>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class='inner manageInner'>
+	<div class='conMiddle clearfix'>
+		<div class='editInfo clearfix'>
+			<h1>编辑个人资料</h1>						
+			<div class='editInfoLeft'>
+				<ul class='editInfoLeftUl'>
+					<li>
+						<a class='editInfoLeftTitle' href='baseInfoEdit.html'>基础信息</a>					
+					</li>
+					<li>
+						<span class='editInfoLeftTitle editInfoLeftTitleClick'>实名认证</span>
+					</li>
+					<li>
+						<a class='editInfoLeftTitle' href='payInfoEdit.html'>支付信息</a>	
+					</li>
+				</ul>						
+			</div>
+			<div class='editInfoRights'>
+				<div class='editInfoRight'>
+					<h2>编辑实名信息</h2>
+					<form id='realAuthEditForm'>
+						<ul class='editInfoRightUl realInfo'>
+							<li>
+								<span>真实姓名*</span><br>
+								<input type="text" name="name" required maxlength="10" placeholder="请输入真实姓名">
+							</li>
+							<li>
+								<span>身份证号*</span><br>
+								<input type="text" name="identity" required isId='true' placeholder="请输入身份证号">
+								<i class='realIsId'>真实姓名请于证件号保持一致</i>
+							</li>
+							<li class='fileUp'>
+								<span class='headImgTitle'>证件文件*</span><em class='anthError'> 这是必填字段</em><br>
+								<div class='idFile'></div>
+								<div class='uploadFileDiv'>
+									<input type="file" class='uploadHead uploadFileBtn' id='uploadAnth'>
+									<div class='replaceUpload'><span class='fa fa-plus'></span></div>
+								</div>
+								<input type="hidden" name="idFile" id='idFile'>
+							</li>
+						</ul>
+						<input type="submit" name="" value='保存' class='baseBtn'>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src='../../../js/third/jquery.min.js'></script>
+<script type="text/javascript" src='../../../js/third/layer-v3.1.1/layer/layer.js'></script>
+<script type="text/javascript" src='../../../js/third/jquery.validate.js'></script>
+<script type="text/javascript" src='../../../js/third/messages_zh.js'></script>
+<script type="text/javascript" src='../../../js/third/layui/layui.all.js'></script>
+<script type="text/javascript" src='../../../js/common/common.js'></script>
+<script type="text/javascript" src='../../../js/common/service.js'></script>
+<script type="text/javascript" src='../../../js/common/url.js'></script>
+<script type="text/javascript" src='../../../js/common/uploadfile.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/mangercenter.js'></script>
+<script type="text/javascript" src='../../../js/business/mangercenter/personal/realNameAnth.js'></script>
+</body>
+</html>

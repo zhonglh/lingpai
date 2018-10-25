@@ -1,0 +1,199 @@
+.manageInner{background: rgb(240, 240, 242);padding:98px 0 20px;}
+.conMiddle{position:relative;width:1308px;margin:0 auto;background: #fff;padding:55px 0 35px;}
+.manageInnerLeft{padding:15px 20px;width:280px;float:left;padding-bottom: 78px;}
+.personalIntroduce{padding-left: 30px;border-bottom:1px solid rgb(187, 187, 187);padding-bottom: 22px}
+.personalImg{width: 81px;height: 81px;border-radius: 100%;float:left;margin-right:14px;}
+.personalName{float:left;margin-top:6px;}
+.personalName p{font-size: 18px;line-height: 35px;}
+.manageInnerLeftList{padding: 15px 30px;font-size: 18px;border-top:1px solid rgb(187, 187, 187);margin-top:-1px;}
+.manageInnerLeftList dt{color: rgb(98, 93, 93);font-weight: bold;margin-bottom: 16px;}
+.jobTitle,.manageInnerLeftList .noddTitle,.manageInnerLeftList .ddTitle{display:inline-block;cursor:pointer;color: rgb(63, 81, 181);margin-left: 36px;line-height:43px;}
+.notice{text-indent: 0}
+.manageInnerLeftList .ddClick{margin-left:3px;text-align:center;padding:0 33px;color: #fff;background-color: rgb(63, 81, 181);}
+.manageInnerRight{cursor:default;width:906px;}
+.manageInnerRight h1{margin-top:20px;color:rgb(63, 81, 181);}
+.expertListUl{width:912px;}
+.expertListTopTitle{font-size: 20px;color:#101010;margin-bottom:10px;}
+.expertListTopTitleR{width:400px;position: absolute;right: 58px;top: 14px;}
+.expertListUl li{padding:14px 30px 10px;margin-top:20px;position: relative;}
+.expertListLeft p{line-height:42px;}
+.expertListButtom span{width:175px;color:#101010;}
+.expertListButtom{margin-top:14px;}
+.totalRevenue{text-align:center;font-size:18px;border-bottom:1px solid #bbb;margin-top:20px;padding-bottom:24px;}
+.applyForJobDelete,.withdrawal,.totalRevenueBtn{cursor:pointer;line-height:33px;margin-left:20px;display: inline-block;width: 90px;height: 33px;color: #fff;background-color: rgb(16, 142, 233);border:1px solid rgb(16, 142, 233);border-radius: 4px;font-size: 12px;text-align: center;}
+.totalRevenueTable{line-height:45px;width:100%;text-align: center;margin-top:10px;}
+.totalRevenueTable th{font-weight: 400;width:122px;font-size:18px;}
+.totalRevenueTable td{font-size:16px;}
+.totalRevenueTable .company{width:auto;}
+.messageNoticeContent{padding:24px 200px 0 100px;}
+.messageNoticeContent h3{font-size:16px;line-height:45px;text-align:center;border-bottom:1px solid #bbb;}
+.content h4{line-height: 45px;font-size:20px;margin-top:24px;}
+.contentUl li{color:#101010;border-top:1px solid #eee;padding:8px 0 20px 20px;font-size:16px;}
+.contentUlTitle{line-height: 30px}
+.contentUlTitle img{width:30px;height:30px;border-radius: 100%;vertical-align: middle}
+.contentUlName {margin:0 4px;vertical-align: middle;color:rgb(76 132 165);}
+.contents{text-indent:2em;line-height: 26px}
+.contentTime{font-size:16px;color:#ccc;float:right;margin-top:-20px;}
+.contentUlTitle span{vertical-align: middle}
+.editInfo{width:auto;background: #fff;margin-top:-40px;}
+.editInfoLeft{float:left;width:260px;min-height:calc(100vh - 340px);margin-top:-10px;padding:20px 30px ;margin-bottom:55px;position:relative;}
+.editInfo h1{font-size:28px;color:rgb(63, 81, 181);line-height:78px;padding-left:30px;}
+.editInfoLeftUl>li{line-height:45px;font-size:18px;}
+.editInfoLeftTitle{cursor:pointer;border-radius: 4px; display: inline-block;width:100%;text-indent: 12px;color:rgb(63, 81, 181);}
+.editInfoLeftTitleClick{background:rgb(63, 81, 181);color:#fff;}
+.editInfoRight{padding:20px 30px;width:800px;}
+.editInfoRights{float:left;margin-top: -20px;border-left:1px solid #bbb;}
+.editInfoRight h2{font-size: 24px;color:rgb(63, 81, 181);line-height: 40px;}
+.editInfoRightUl li{line-height: 55px;font-size:0;}
+.editInfoRightUl label{margin-left:2px;font-size:16px;vertical-align: middle}
+.editInfoRightUl span{width:91px;font-size:18px;vertical-align: middle;display: inline-block}
+.editInfoRightUl input,.editInfoRightUl select{vertical-align: middle; width:200px;height:30px;font-size:14px;padding:0 8px;border:1px solid #bbb;}
+.headImg{width:119px;height:119px;border-radius: 100%;vertical-align: middle;margin-right:20px;}
+.baseBtn{margin-top:100px;font-size:18px;width:124px;height:35px;line-height:35px;text-align:center;color:rgb(63, 81, 181);border-radius: 4px;border:1px solid rgb(63, 81, 181);}
+.editInfoRightUl select{border-radius: 6px;width:218px;}
+.editInfoRightUl .uploadHead{border:none;}
+.headImgTitle{margin-top:30px;margin-bottom: 10px;line-height:45px;}
+.editInfoRightNotice{font-size:18px;color:#bbb;line-height:60px;}
+.payInfo li,.realInfo li{line-height: 42px}
+.payInfo span{width:152px;}
+.payList{padding-left:30px;}
+.editJobInfo{background: #fff;padding:30px 50px;width:1206px;margin-top:-55px;}
+.editJobInfo h1{font-size:24px;color:rgb(63, 81, 181);line-height:45px;}
+.editJobInfoUl>li{padding:0 30px;border-bottom:1px solid #bbb;padding-bottom:30px;}
+.selectStatus{font-size:18px;line-height:45px;position: relative;}
+.high{margin-left:20px;color:#bbb;}
+.selectStatus input{width:18px;height:45px;}
+.selectStatus dt{font-weight: 400;margin-bottom:0;line-height:65px;}
+.selectStatus dd{padding-left:50px;}
+.selectStatus input{margin-right:15px;}
+.selectStatus span,.selectStatus i,.selectStatus em,.selectStatus input{vertical-align: middle}
+.selectStatus span{width:auto;}
+.applyToBe{color:#bbb;font-size:18px;}
+.applyToBe i{color:#101010;margin-left:10px;cursor:pointer;position: relative;}
+.applyToBe .appleNotice{position: absolute;left:0;top:20px;padding:20px;display: none;width:250px;background:#eee;border-radius: 4px;z-index: 1;font-size:16px;}
+.selectCompany,.applyToBe{margin-left:20px;}
+.clickSelectCompany{color:#bbb;cursor:pointer;position:relative;display: inline-block;font-size:16px;}
+.applyCompany{display:none;top:45px;border:1px solid #bbb;background:#fff;position: absolute;line-height: 30px;text-align:center;font-size:12px;}
+.applyCompany li{margin-bottom:-1px;color:#101010;border-bottom:1px solid #bbb;cursor: pointer;padding:0 32px;}
+.applyCompany li:hover{background:rgb(63, 81, 181);color:#fff;}
+.clickSelectCompany i{margin-left:10px;}
+.skillsUl .sk,#channel{width:0;border:none;padding:0;margin:0;}
+.labelSkill{position: relative;}
+.labelSkill label{font-size:18px;position: absolute;top:10px;left: 547px;width: 120px;}
+.clickSelectCompany .spanTitle{color:rgb(63, 81, 181);}
+.recommended{padding:5px 8px;width:760px;height:100px;border:1px solid #bbb;}
+input,select,textarea{vertical-align: middle;border:1px solid #bbb;font-size:14px;line-height:30px;}
+input[type='radio']{border:none;}
+option{line-height: 28px;display: inline-block;}
+.workExperience input{padding:0 8px;width:235px;line-height:30px;height:30px;vertical-align: middle}
+.workExperience dd{line-height: 58px;padding-left:0;}
+.workExperience textarea{padding:5px 8px;width:736px;height: 100px;vertical-align: text-top}
+.skills{margin-top:26px;}
+.skills span{font-size:18px;}
+.skillsUl{margin-left:90px;margin-top:-24px;width:580px;font-size:0;}
+.skillsUl li{cursor:pointer;font-size:16px;margin-bottom:16px;display:inline-block;text-align:center;line-height:30px;width:70px;height:30px;border:1px solid rgb(168, 161, 161);color:rgb(168, 161, 161);border-radius: 4px;margin-right:20px;}
+.jobWant .addExperienceBut,.addExperienceBut{cursor:pointer;width:auto;margin-top:25px;margin-bottom: 10px; display:inline-block;color:rgb(63, 81, 181);border:1px solid rgb(63, 81, 181);font-size:18px;padding:0 15px;height:33px;line-height:33px;text-align:center;border-radius: 4px}
+.addJobBtn{border-radius:4px;font-size:18px;margin-top:50px;border:1px solid rgb(63, 81, 181);width:198px;text-align:center;height:33px;line-height:33px;color:rgb(63, 81, 181);}
+.educationName,.jobWant select{vertical-align: middle;margin-right:20px;width:213px;padding:0 8px;height:32px;font-size:14px;border-radius: 4px;}
+.educationName{width:253px;}
+.jobWant span{width:102px;display: inline-block;}
+.jobWant .timeJob{width:70px;}
+.jobWant .skillsUl{margin-left:107px;margin-top:-44px;line-height: 0}
+.jobWant .skillsUl li{margin-bottom:10px;}
+.jobWant .jobWay{width: 18px;}
+.jobWant label{margin-right:30px;}
+.jobWant .skills{margin-top:0;}
+.editJobInfoUl dt{color:#101010;}
+.jobWant .addExperienceBut{margin-top:20px;padding:0 40px;}
+.subDiv{text-align:center;}
+.lookDetails{background: #fff;width:100%;text-align:left;padding-top:10px;}
+.lookDetails p{font-size:18px;line-height:40px;}
+.lookDetailsInfo{border-bottom:1px solid #bbb;}
+.lookDetailsInfo span{float:right;}
+.lookDetailsInfo i{font-style: normal;margin-left:20px;}
+.lookDetails table{width:840px;margin:0 auto;line-height:50px;text-align:center;}
+.lookDetails .totalRevenueBtn{float:right;}
+.lookDetails th{font-size:18px;width:auto;font-weight: 400}
+.realIsId{font-size:18px;color:#bbb;margin-left:20px;font-style: normal;vertical-align: bottom;}
+.idFile{display: inline-block;vertical-align: text-bottom;}
+.idFileList{position: relative;width:120px;height:100px;margin-right:20px;display: inline-block}
+.idFileList img{width:100%;height:100%;border-radius: 0}
+.delete{display: none; line-height:24px;width:100%;color:#fff;text-align:right;font-size:20px;position: absolute;top:0;left:0;height:24px;background-color: rgba(0,0,0,0.3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);}
+.replaceUpload,.editInfoRightUl  .uploadFileBtn{border:1px solid #bbb;font-size:0px;text-align:center;vertical-align: middle; width:100%;height:100%;background: #fff;color:#101010;padding:0;}
+.delete span{margin-right:5px;display: inline;cursor:pointer;}
+.uploadFileDiv{position: relative;width:120px;height:100px;display: inline-block;vertical-align: text-bottom;}
+.replaceUpload{z-index:2;position: absolute;top:0;left:0;width: 100%;height:100%;line-height: 100px;}
+.replaceUpload .fa-plus{font-size:22px;}
+.anthError{margin-top: 20px;display: inline-block;display: none;color:#f00;font-style: normal;font-size:18px;vertical-align: middle;margin-top: 19px;}
+.mangerRight{float:left;padding: 0 40px;margin-top: -20px;border-left:1px solid rgb(187, 187, 187);min-height:670px;}
+.commonRight{min-height:550px;}
+#pages{margin-top:20px;text-align: center;}
+.layui-laypage .layui-laypage-curr .layui-laypage-em{background: rgb(63, 81, 181)}
+.layui-laypage a:hover{color:rgb(63, 81, 181);}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+.lookDetailsS td{font-size:16px;}
+.lookDetailsS{padding-top: 35px;}
+.skillsUl .skillBorder{border-color:rgb(63, 81, 181);background:rgb(63, 81, 181);color:#fff; }
+.selectCompanyName{margin-left: 38px;}
+.rightList{font-size: 18px;}
+.baseInfoListImg{margin-top:-38px;}
+.realInfoList{line-height: 55px;}
+.comMargin{margin-left:92px;line-height: 36px;margin-top: -47px;font-size:18px;}
+.comWidth{width:110px;font-style: normal;display: inline-block}
+.layui-upload-wrap{display: inline-block}
+.realInfo .fileUp{line-height: 0}
+.layui-upload-iframe{height:0;margin:0;padding:0;}
+.fa-times-circle:before{margin-right: 3px;}
+.deleteGroup{cursor:pointer;position: absolute;right:0;top:18px; color:rgb(63, 81, 181);padding:3px 8px;border:1px solid rgb(63, 81, 181);border-radius: 4px;}
+.closeRecruitment{float:left;}
+.collectionImg{float:right;width:119px;text-align:center;}
+.collectionImg .imgColl{float:none;margin-bottom:20px;}
+.collectionImg i{font-size:22px;color:rgb(255, 152, 0);vertical-align: middle}
+.titleSiteChange{width:346px;right: 180px;}
+.companytable .company{width:122px;}
+.companyIndustry{display: inline-block;margin-left:30px;}
+.companyInfoUl li{line-height:66px;}
+.companySite select{width:124px;margin-right:10px;}
+.companySite input{width:288px;}
+.companyInfoUl textarea{width: 689px;padding: 0 8px;vertical-align: text-top;height:117px;margin-top:-10px;}
+.companyInfoUl .headImgTitle{width:auto;margin-right:20px;vertical-align: bottom}
+.companyInfoSub{line-height:66px;margin-top:10px;font-size:18px;color:#bbb;}
+.companyInfoSub .baseBtn{margin-right:20px;margin-top:0;}
+.costTotle{border-bottom:1px solid rgb(187, 187, 187);line-height:60px;font-size:18px;}
+.floatRight{float:right;}
+.floatRight i{cursor:pointer;margin-left:15px;background: rgb(63, 81, 181);font-style:normal; color:#fff;width:115px;height:40px;line-height: 40px;text-align: center;display: inline-block;}
+.costUl{padding:20px 0 10px 150px;line-height: 48px;font-size:18px;width:478px;}
+.costWithdrawal{position: absolute;top:12px;left:60px;}
+.balance{position: relative;}
+.errorInfo label{display: none!important}
+.errorInfo .error{border-color:#f00;}
+.companyViewUl span{width:auto;}
+.companyViewUl .comMargin{margin-top:-51px;}
+.companyViewUl img{width:120px;height:100px;vertical-align: text-top}
+.jobWant  .specified{width:455px;}
+.taskDiv{text-align:left;}
+.closeRecruitment a{display: inline-block;width:100%;height: 100%}
+.recruitmentStatus2Div{display: inline-block;}
+.moneyRecharge li{display: inline-block;margin-right:30px;font-size:18px;line-height: 60px;}
+.classify{float:none;display: inline-block;margin:0 20px;vertical-align: middle}
+.classify i{margin-left:0;width:132px;}
+.rechargeTitle{font-size:18px;margin-bottom:15px;}
+.rechargeMoneyDiv{font-size:18px;line-height: 68px}
+.companytable input,.rechargeMoneyDiv>input{width:20px;vertical-align: middle;height:20px;}
+.rechargeTips{color:#f00;vertical-align: middle}
+.rechargeMoney{margin-left:47px;font-size:18px;}
+.rechargeMoney input{width:154px;vertical-align: middle;margin:0 10px;padding:0 8px;}
+.rechargeBank{line-height:50px;  width:626px;height:192px;padding:20px 15px;border:1px solid #bbb;margin-left:56px;}
+.rechargeBank p{font-weight: 700}
+.rechargeBank .rechargeTips{font-weight: 400}
+.userIdentityUl li{border:none;}
+.greyColor{color:#bbb;margin-left:20px;}
+.applyForJobDelete,.applyForJobList .totalRevenueBtn{width:48px;margin:0 5px;}
+.applyForJobDelete{background: #fff;color:#101010;border:1px solid #101010;}
+.addApplyForJob{text-align: right}
+
+.floatRight  .noInvoice{background: rgb(168, 161, 161);cursor:default;}
+.selectBtn{border:none;}
+.selectBtn .invoice{margin-left:50px;}
+.selectBtn  em{font-style: normal}
+.companytable .invoiceInput{width:16px;height: 16px}

@@ -1,0 +1,9 @@
+#companyForm input{border:1px solid #bbb;padding:0 8px;width:235px;line-height:30px;height:30px;vertical-align: middle}
+#companyForm .selectBtn{font-size:18px;width:124px;height:35px;line-height:35px;text-align:center;color:rgb(63, 81, 181);border-radius: 4px;border:1px solid rgb(63, 81, 181)}
+#companyForm{padding:20px 20px 0;}
+.companyTable{width:780px;margin:20px 20px 0;border-collapse: collapse;border:1px solid #bbb;}
+.companyTable th,.companyTable td{line-height:40px;border:1px solid #bbb;text-align: center;font-size:18px;}
+.companyTable th{font-weight: 400;}
+.tableDiv{height:calc(100vh - 112px);overflow: auto}
+#pages{text-align: right;margin:0 20px;border-top:1px solid #bbb;margin-top:-1px;}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {background: rgb(63, 81, 181);}

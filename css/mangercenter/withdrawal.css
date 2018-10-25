@@ -1,0 +1,9 @@
+#withdrawalForm{padding:30px;}
+.withdrawalP{margin-bottom:25px;font-size:18px;}
+.accountInput{border:1px solid #fff;font-size:16px;width:500px;padding:0 8px;height:30px;line-height: 30px;border-radius: 4px;}
+.editAccount{cursor:pointer;line-height:33px;margin-left:20px;display: inline-block;width: 90px;height: 33px;color: #fff;background-color: rgb(16, 142, 233);border:1px solid rgb(16, 142, 233);border-radius: 4px;font-size: 12px;text-align: center;}
+.inputBorder{border-color:#bbb;}
+.withdrawalBtn{cursor:pointer;float:right;margin-top:30px;width:175px;color:#101010;display: inline-block;line-height: 42px;height: 42px;border-radius: 4px;font-size: 14px;border:1px solid #bbb;text-align: center;}
+.withdrawalInput{border-color:#f00;}
+
+
