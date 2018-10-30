@@ -21,8 +21,8 @@ $(function(){
 	})
 
 	var withdrawalForm = $('#withdrawalForm');
-	withdrawalForm.validate({
-		submitHandler:function(form){
+	$("#withdrawalBtn").click(function(){
+		if(withdrawalForm.valid()){
 			if(accountInputIsEmpty){
 				return;
 			}

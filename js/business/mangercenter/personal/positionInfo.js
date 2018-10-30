@@ -16,18 +16,15 @@ $(function(){
 
 	//求职信息表单提交
 	var jobWantedInfoForm = $('#jobWantedInfoForm');
-	jobWantedInfoForm.validate({
-		submitHandler:function(form){
+	$("#submitBtn").click(function(){
+		if(jobWantedInfoForm.valid()){
 			var formData = form2Obj(jobWantedInfoForm);
 			formData = dataFormat(formData);
 			submitAjaxHandler(getServerUrl().personalMangercenter.saveResumeInfoUrl,JSON.stringify(formData),function(data){
                 location.href = getServerUrl().personalMangercenter.toResumeInfoViewUrl;
 			});
-		},
-		errorPlacement: function(error, element) {
-			$( element ).parent().append( error );
 		}
-	});
+	})
 	//将数据格式化
 	function dataFormat(data){
 		if (!(data.post instanceof Array)) data.post = new Array(data.post);

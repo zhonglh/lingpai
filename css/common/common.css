@@ -70,6 +70,5 @@ body{color:#333;font-family: 'iconfont',Roboto, BlinkMacSystemFont, "Helvetica N
 .notice {margin-left: 8px;line-height: 28px;text-align: center;background-color: rgb(16, 142, 233);vertical-align: middle;display: inline-block;width: 28px;height: 28px; font-size: 12px;color: #fff;border-radius: 4px;}
 
 .layui-layer-shade{opacity: 0.3!important;}
-
-
+.layui-layer-title{text-align: center;color: rgb(255, 255, 255)!important;background: rgb(63, 81, 181)!important;}
 

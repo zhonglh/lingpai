@@ -3,7 +3,7 @@ $(function(){
 	var withdrawal = $('.withdrawal');
 	withdrawal.click(function(){
 		withdrawalLayer =openWindow({
-			title:['提现', 'text-align:center;color:#fff;background:rgb(63, 81, 181);font-size:18px;'],
+			title:['提现'],
 			area: ['818px', '310px'],
 			content: getServerUrl().common.toWithdrawalUrl
 		})
@@ -12,7 +12,7 @@ $(function(){
 	var invoice = $('.invoice');
 	invoice.click(function(){
 		invoiceListLayer =openWindow({
-			title:['发票记录', 'text-align:center;color:#fff;background:rgb(63, 81, 181)'],
+			title:['发票记录'],
 			content: getServerUrl().companyMangercenter.toInvoiceListUrl
 		})
 	})
@@ -20,6 +20,7 @@ $(function(){
 	var dataTotleCount = 0;
 	var limit = DEFAULT_LIMIT;
 	var pageCurr = 1;
+	var items ;
 	queryPage(pageCurr);
 	function queryPage(curr){
 		var queryData = {
@@ -27,7 +28,7 @@ $(function(){
     		pageSize:limit,
     		queryBean:{}
     	}	
-		postAjaxAsync(getServerUrl().companyMangercenter.costCenterInfoUrl,JSON.stringify(queryData),function(data){
+		postAjaxAsync(getServerUrl().companyMangercenter.costCenterInfoUrl,JSON.stringify(queryData),function(result){
 			var str = 
 				"<tr>"
 					+"<th>订单编号</th>"
@@ -37,9 +38,14 @@ $(function(){
 					+"<th>结算时间</th>"
 					+"<th>结算状态</th>"
 				+"</tr>";
-			dataTotleCount = limit*data.pageTotle;
-			data = data.data[curr];
-			for (var i = 0; i < data.length; i++) {
+			if(DEBUG){
+				items = result.data[curr];
+				dataTotleCount = limit*result.pageTotle;
+			}else{
+				dataTotleCount = result.totle;
+            	items = result.items;
+			}
+			for (var i = 0; i < items.length; i++) {
 				str =str+ 
 					"<tr>"
 						+"<td>1234</td>"
@@ -53,8 +59,7 @@ $(function(){
 			}
 			var companytable = $(".companytable");
 			companytable.html(str);
-			if(curr!=1) return;
-			linpaiPage(dataTotleCount,limit,queryPage);
+			linpaiPage(dataTotleCount,limit,curr,queryPage);
 		});
 		
 	}

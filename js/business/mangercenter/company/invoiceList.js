@@ -6,6 +6,7 @@ $(function(){
 	var dataTotleCount = 0;
 	var limit = DEFAULT_LIMIT;
 	var pageCurr = 1;
+	var items ;
 	queryPage(pageCurr);
 	function queryPage(curr){
 		var queryData = {
@@ -13,7 +14,7 @@ $(function(){
     		pageSize:limit,
     		queryBean:{}
     	}	
-		postAjaxAsync(getServerUrl().companyMangercenter.invoiceInfoUrl,JSON.stringify(queryData),function(data){
+		postAjaxAsync(getServerUrl().companyMangercenter.invoiceInfoUrl,JSON.stringify(queryData),function(result){
 			var str = 
 				"<tr>"
 					+"<th>申请日期</th>"
@@ -23,9 +24,14 @@ $(function(){
 					+"<th>寄送时间</th>"
 					+"<th>韵达单号/电子票下载</th>"
 				+"</tr>";
-			dataTotleCount = limit*data.pageTotle;
-			data = data.data[curr];
-			for (var i = 0; i < data.length; i++) {
+			if(DEBUG){
+				items = result.data[curr];
+				dataTotleCount = limit*result.pageTotle;
+			}else{
+				dataTotleCount = result.totle;
+            	items = result.items;
+			}
+			for (var i = 0; i < items.length; i++) {
 				str =str+ 
 					"<tr>"
 						+"<td>2017-09-18</td>"
@@ -39,8 +45,7 @@ $(function(){
 			}
 			var invoiceContent = $(".invoiceContent table");
 			invoiceContent.html(str);
-			if(curr!=1) return;
-			linpaiPage(dataTotleCount,limit,queryPage);
+			linpaiPage(dataTotleCount,limit,curr,queryPage);
 		});
 		
 	}

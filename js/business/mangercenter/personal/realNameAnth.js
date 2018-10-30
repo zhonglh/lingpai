@@ -2,21 +2,19 @@ $(function(){
 	//实名认证表单提交
 	var realAuthEditForm = $('#realAuthEditForm');
 	var anthError = $('.anthError');
-	realAuthEditForm.validate({
-		submitHandler:function(form){
+
+	$("#saveBtn").click(function(){
+		if(realAuthEditForm.valid()){
 			if(!imgIds.images){
 				anthError.css('display','inline-block');
-				return;
+				return false;
 			}
 			var formData = form2Obj(realAuthEditForm);
 			submitAjaxHandler(getServerUrl().personalMangercenter.saveRealAuthUrl,JSON.stringify(formData),function(data){
                 location.href = getServerUrl().personalMangercenter.toRealNameAnthViewUrl;
 			});
-		},
-		errorPlacement: function(error, element) {
-			$( element ).parent().append( error );
 		}
-	});
+	})
 
 	//证件文件
 	var idFile = $('.idFile');

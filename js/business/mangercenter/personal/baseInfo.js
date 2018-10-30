@@ -1,18 +1,16 @@
 $(function(){
 	//基础信息表单提交
 	var baseInfoEditForm = $('#baseInfoEditForm');
-	baseInfoEditForm.validate({
-		submitHandler:function(form){
+	
+	$("#saveBtn").click(function(){
+		if(baseInfoEditForm.valid()){
 			var formData = form2Obj(baseInfoEditForm);
 			submitAjaxHandler(getServerUrl().personalMangercenter.saveBaseInfoUrl,JSON.stringify(formData),function(data){
                 location.href = getServerUrl().personalMangercenter.toBaseInfoViewUrl;
 				setCookie(COOKIE_MOBILE,formData.mobile,7);
 			});
-		},
-		errorPlacement: function(error, element) {
-			$( element ).parent().append( error );
 		}
-	});
+	})
 	//上传头像
 	var headImg = $('.headImg');
 	var icon2 = $('#icon2');
@@ -51,7 +49,7 @@ $(function(){
 		clickSelectCompanyInput.attr('required','true');
 		clickSelectCompanySpan.click(function(){
 			companyLayer =openWindow({
-				title:['请选择企业', 'text-align:center;color:#fff;background:rgb(63, 81, 181)'],
+				title:['请选择企业'],
 				content: getServerUrl().personalMangercenter.toCompanyUrl,
 				btns: 1,
 				btn: ['确定', '取消'],

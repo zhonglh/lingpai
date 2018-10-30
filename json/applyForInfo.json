@@ -1,0 +1,15 @@
+{
+	"success":"ok",
+	"data":{
+		"job":{
+			"industry1":"110000",
+			"industry2":"110100",
+			"industry3":"110102"
+		},
+		"city":{
+			"provinces":"120000",
+			"city":"120100",
+			"counties":"120101"
+		}
+	}
+}

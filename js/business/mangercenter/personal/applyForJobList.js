@@ -3,6 +3,7 @@ $(function(){
 	var dataTotleCount = 0;
 	var limit = DEFAULT_LIMIT;
 	var pageCurr = 1;
+	var items ;
 	queryPage(pageCurr);
 	function queryPage(curr){
 		var queryData = {
@@ -10,7 +11,7 @@ $(function(){
     		pageSize:limit,
     		queryBean:{}
     	}	
-		postAjaxAsync(getServerUrl().personalMangercenter.incomeInfoUrl,JSON.stringify(queryData),function(data){
+		postAjaxAsync(getServerUrl().personalMangercenter.incomeInfoUrl,JSON.stringify(queryData),function(result){
 			var str = 
 				"<tr>"
 					+"<th>职位类型</th>"
@@ -20,9 +21,14 @@ $(function(){
 					+"<th>期望日薪</th>"
 					+"<th>操作</th>"
 				+"</tr>";
-			dataTotleCount = limit*data.pageTotle;
-			data = data.data[curr];
-			for (var i = 0; i < data.length; i++) {
+			if(DEBUG){
+				items = result.data[curr];
+				dataTotleCount = limit*result.pageTotle;
+			}else{
+				dataTotleCount = result.totle;
+            	items = result.items;
+			}
+			for (var i = 0; i < items.length; i++) {
 				str =str+ 
 					"<tr>"
 						+"<td>前端工程师</td>"
@@ -36,8 +42,7 @@ $(function(){
 			}
 			var totalRevenueTable = $(".totalRevenueTable");
 			totalRevenueTable.html(str);
-			if(curr!=1) return;
-			linpaiPage(dataTotleCount,limit,queryPage);
+			linpaiPage(dataTotleCount,limit,curr,queryPage);
 		});
 		
 	}

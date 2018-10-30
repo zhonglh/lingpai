@@ -11,16 +11,16 @@
 <div class='header'>
 	<div class='clearfix headerContent'>
 		<div class='headerLeft'>
-			<a href="index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
+			<a href="../../index/index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
 				<span class='logo familyText'>灵派LOGO</span>
 			</a>
 			<span class='partner'>申请成为品牌合作方</span>
 		</div>
 		<div class='headerRight clearfix'>
 			<ul class='headerRightLeft headerRightLeft2'>
-				<li><a href=''>专家顾问</a></li>
-				<li class='switchInfo'><a href=''>发现牛人</a></li>
-				<li class='exitLogin'><a href=''>发现项目</a></li>
+				<li><a href='../../expertAdvisers/expertAdvisers.html'>专家顾问</a></li>
+				<li class='switchInfo'><a href='../../foundPerson/foundPerson.html'>发现牛人</a></li>
+				<li class='exitLogin'><a href='../../foundProject/foundProject.html'>发现项目</a></li>
 				<li class='headerMargin'>工作中心</li>
 				<li>通知<span class='notice'>1</span></li>
 			</ul>
@@ -50,9 +50,9 @@
 							</dd>
 							<dd id='industry'>
 								<span>职位类型*</span>
-								<select></select>
-								<select></select>
-								<select name='industry' required></select>
+								<select name='industry1' id='industry1'></select>
+								<select name='industry2' id='industry2'></select>
+								<select name='industry3' required id='industry3'></select>
 							</dd>
 							<dd>
 								<span>职位名称*</span>
@@ -60,13 +60,13 @@
 							</dd>
 							<dd class='city'>
 								<span>工作地点*</span>
-								<select></select>
-								<select></select>
-								<select name='city' id='city' required></select>
+								<select name='provinces' id='provinces'></select>
+								<select name='city' id='city'></select>
+								<select name='counties' required id='counties'></select>
 							</dd>
 							<dd>
 								<span>标准日薪</span>
-								<input type="text" name="jobName" required placeholder="请填写标准日薪" number='true'>元
+								<input type="text" name="daySalary" required placeholder="请填写标准日薪" number='true' max="1000000" digits='true'>元
 							</dd>
 							<dd>
 								<span>工期天数</span>
@@ -96,22 +96,6 @@
 								<div class='skills'>
 									<span>所需技能*</span>
 									<ul class='skillsUl labelSkill'>
-										<li>java</li>
-										<li>php</li>
-										<li>js</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<li>java</li>
-										<input type="text" name="skills" class='sk' required>
 									</ul>
 								</div>
 							</dd>
@@ -131,7 +115,7 @@
 						</dl>
 					</li>
 				</ul>
-				<div class='subDiv taskDiv'><input type="submit" name="" value='提交' class='addJobBtn'></div>
+				<div class='subDiv taskDiv'><input type="submit" name="" value='提交' class='addJobBtn' id='submitBtn'></div>
 			</form>
 		</div>
 	</div>

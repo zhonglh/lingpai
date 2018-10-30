@@ -11,16 +11,16 @@
 <div class='header'>
 	<div class='clearfix headerContent'>
 		<div class='headerLeft'>
-			<a href="index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
+			<a href="../../index/index.html"><img src="../../../images/raw_1478675952.png" class='logoImg'>
 				<span class='logo familyText'>灵派LOGO</span>
 			</a>
 			<span class='partner'>申请成为品牌合作方</span>
 		</div>
 		<div class='headerRight clearfix'>
 			<ul class='headerRightLeft headerRightLeft2'>
-				<li><a href=''>专家顾问</a></li>
-				<li class='switchInfo'><a href=''>发现牛人</a></li>
-				<li class='exitLogin'><a href=''>发现项目</a></li>
+				<li><a href='../../expertAdvisers/expertAdvisers.html'>专家顾问</a></li>
+				<li class='switchInfo'><a href='../../foundPerson/foundPerson.html'>发现牛人</a></li>
+				<li class='exitLogin'><a href='../../foundProject/foundProject.html'>发现项目</a></li>
 				<li class='headerMargin'>工作中心</li>
 				<li>通知<span class='notice'>1</span></li>
 			</ul>
@@ -59,9 +59,9 @@
 							</li>
 							<li class='companySite errorInfo'>
 								<span>公司地址*</span>
-								<select></select>
-								<select></select>
-								<select required name='city'></select>
+								<select name='provinces' id='provinces'></select>
+								<select name='city' id='city'></select>
+								<select required name='counties' id='counties'></select>
 								<input type="text" name="street" placeholder="请输入街道" required>
 							</li>
 							<li>
@@ -70,18 +70,18 @@
 							</li>
 							<li>
 								<span>企业描述</span>
-								<textarea placeholder="请输入企业描述" name='intro'></textarea>
+								<textarea placeholder="请输入企业描述" name='intro' required></textarea>
 							</li>
 							<li>
 								<span>成功案例</span>
-								<textarea placeholder="请输入成功案例" name='works'></textarea>
+								<textarea placeholder="请输入成功案例" name='works' required></textarea>
 							</li>
 							<li>
 								<span class='headImgTitle'>营业执照副本*</span>
 								<input type="file" class='uploadHead' name="icon2" required>
 							</li>
 						</ul>
-						<div class='companyInfoSub'><input type="submit" name="" value='提交' class='baseBtn'>等待平台审核，审核通过可获得认证</div>
+						<div class='companyInfoSub'><input type="submit" name="" value='提交' class='baseBtn' id='submitBtn'>等待平台审核，审核通过可获得认证</div>
 					</form>
 				</div>
 			</div>

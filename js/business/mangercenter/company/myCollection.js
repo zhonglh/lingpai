@@ -2,6 +2,7 @@ $(function(){
 	var dataTotleCount = 0;
 	var limit = DEFAULT_LIMIT;
 	var pageCurr = 1;
+	var items ;
 	queryPage(pageCurr);
 	function queryPage(curr){
 		var queryData = {
@@ -9,11 +10,16 @@ $(function(){
     		pageSize:limit,
     		queryBean:{}
     	}		
-		postAjaxAsync(getServerUrl().companyMangercenter.collectionInfoUrl,JSON.stringify(queryData),function(data){
+		postAjaxAsync(getServerUrl().companyMangercenter.collectionInfoUrl,JSON.stringify(queryData),function(result){
 			var str = '';
-			dataTotleCount = limit*data.pageTotle;
-			data = data.data[curr];
-			for (var i = 0; i < data.length; i++) {
+			if(DEBUG){
+				items = result.data[curr];
+				dataTotleCount = limit*result.pageTotle;
+			}else{
+				dataTotleCount = result.totle;
+            	items = result.items;
+			}
+			for (var i = 0; i < items.length; i++) {
 				str =str+ 
 					"<li>"
 						+"<div class='expertListTop clearfix'>"
@@ -26,7 +32,7 @@ $(function(){
 								+"<p><span class='listTitle'>目前职位：</span>腾讯科技微信事业部<i class='listTitleI'>IOS高级程序员</i></p>"
 								+"<p><span class='listTitle'>期望地点：</span>北京<i class='listTitleI'>朝阳区</i></p>"
 								+"<p><span class='listTitle'>工作方式：</span>远程开发</p>"
-								+"<p><span class='listTitle'>擅长技能：</span>#"+data[i].skills[0]+"<i class='listTitleI'>#"+data[i].skills[1]+"</i></p>"
+								+"<p><span class='listTitle'>擅长技能：</span>#"+items[i].skills[0]+"<i class='listTitleI'>#"+items[i].skills[1]+"</i></p>"
 							+"</div>"
 							+"<div class='collectionImg'>"
 								+"<img src='../../../images/raw_1499854342.png' class='imgColl'>"
@@ -45,8 +51,7 @@ $(function(){
 			}
 			var expertListUl = $(".expertListUl");
 			expertListUl.html(str);
-			if(curr!=1) return;
-			linpaiPage(dataTotleCount,limit,queryPage);
+			linpaiPage(dataTotleCount,limit,curr,queryPage);
 		});
 		
 	}

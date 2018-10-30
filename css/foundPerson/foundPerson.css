@@ -1,0 +1,29 @@
+.searchPerson{background:#fff;width: 990px;height: 35px;font-size: 14px;color:#888;border:1px solid #bbb;padding:0 5px;}
+.searchBut{margin-left:22px;width: 74px;height: 37px;color: rgb(63, 81, 181);background-color: rgb(255, 255, 255);border-radius: 4px;font-size: 18px;line-height: 26px;}
+.foundPerson{padding:36px 54px;}
+.foundPersonAuto{margin:0 auto;width:1241px;}
+.foundCheck{font-size: 0;margin-bottom:24px;}
+.wellKnowEnterprises{margin-top:10px;}
+.personList{padding: 25px 0;width:1286px;margin-right:15px;}
+.personListLeft{width:918px;float:left;}
+.personListLeft ul{width:auto;margin-top:-26px;margin-bottom:22px;}
+.personListRight{width:348px;border:1px solid #bbb;float: right;padding-bottom:12px}
+.expertListLeft{width:718px;}
+.expertListTopTitle{margin-bottom: 18px}
+.customTalent{margin:18px 16px 0;border:1px solid #bbb;padding:25px 28px;}
+.customTalent h1{margin-bottom:16px;text-align:center;font-family: SourceHanSansSC, sans-serif; font-weight: 400;font-size: 20px;color: rgb(16, 16, 16);line-height: 26px;}
+.customTalentUl span{width:91px;display: inline-block;font-size: 18px;}
+.customTalentUl li{line-height: 44px;font-size: 0;}
+.customTalentUl select{color:#888;height: 30px;font-size: 14px;padding: 0 8px;border:1px solid #bbb;border-radius: 6px}
+.jobNameSelect{width: 166px;}
+.numberSelect{width:52px;margin-right:15px;}
+.jobArea{width:76px;margin-right:7px;}
+.describe{width: 240px;font-size: 14px;line-height: 20px;color: #888;height: 141px;padding: 5px 8px;border:1px solid #bbb;}
+.contact{padding: 0 8px;width: 148px;height: 30px;font-size: 14px;border:1px solid #bbb;color:#888;}
+.customTalentSub{width: 148px;height: 42px;background-color: rgb(255, 152, 0);border-radius: 4px;font-size: 14px;border:1px solid #bbb;text-align: center;}
+.subDiv{text-align:center;margin-top:11px;margin-bottom:-10px;}
+.editInfo{text-align:center;}
+.editInfo p{font-family: SourceHanSansSC, sans-serif;font-size: 20px;color: rgb(16, 16, 16);line-height:118px;}
+.editInfo span{margin-bottom: 20px;display:inline-block;line-height:42px;width: 290px;height: 42px; border-radius: 4px;font-size: 14px;border:1px solid #bbb;text-align: center;}
+.expertListLeft p{height:auto;}
+.expertListLeft{width:810px;}

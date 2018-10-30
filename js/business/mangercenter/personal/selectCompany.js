@@ -3,16 +3,17 @@ $(function(){
 	var dataTotleCount = 0;
 	var limit = DEFAULT_LIMIT;
 	var pageCurr = 1;
+	var items ;
 //表单提交
 	var companyForm = $('#companyForm');
-	companyForm.validate({
-		submitHandler:function(form){
+	$("#selectBtn").click(function(){
+		if(companyForm.valid()){
 			var formData = form2Obj(companyForm);
 			submitAjaxHandler(getServerUrl().personalMangercenter.companyInfoUrl,JSON.stringify(formData),function(data){
 				queryPage(pageCurr);
 			});
 		}
-	});
+	})
 	var companyTable = $(".companyTable");
 //页面显示数据
 	queryPage(pageCurr);
@@ -22,17 +23,21 @@ $(function(){
     		pageSize:limit,
     		queryBean:{}
     	}	
-		postAjaxAsync(getServerUrl().personalMangercenter.collectionInfoUrl,JSON.stringify(queryData),function(data){
+		postAjaxAsync(getServerUrl().personalMangercenter.collectionInfoUrl,JSON.stringify(queryData),function(result){
 			var str = 
 				"<tr>"
 					+"<th></th>"
 					+"<th>公司名称</th>"
 					+"<th>公司ID</th>"
 				+"</tr>";
-			dataTotleCount = limit*data.pageTotle;
-			data = data.data[curr];
-			companyTable.html('');
-			for (var i = 0; i < data.length; i++) {
+			if(DEBUG){
+				items = result.data[curr];
+				dataTotleCount = limit*result.pageTotle;
+			}else{
+				dataTotleCount = result.totle;
+            	items = result.items;
+			}
+			for (var i = 0; i < items.length; i++) {
 				str =str+ 
 					"<tr>"
 						+'<td><input type="radio" name="companyName" class="companyName"></td>'
@@ -41,8 +46,7 @@ $(function(){
 					+"</tr>";
 			}
 			companyTable.html(str);
-			if(curr!=1) return;
-			linpaiPage(dataTotleCount,limit,queryPage);
+			linpaiPage(dataTotleCount,limit,curr,queryPage);
 		});
 	}
 //给单选按钮增加点击事件

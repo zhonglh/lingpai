@@ -1,5 +1,5 @@
 if(DEBUG){
-    var basePath = 'http://localhost:8044/lingpai';
+    var basePath = 'http://localhost/lingpai';
 }else{
     var basePath = ctx;
 }
@@ -24,6 +24,12 @@ var prodUrl = {
         smsRegisterUrl : basePath + '/member/code',
         smsForgetPasUrl : basePath + '/member/pwdcode'
     },
+    common:{
+        toWithdrawalUrl :"",
+        jobInfoUrl : "",
+        cityInfoUrl:"",
+        skillsUrl:""
+    },
     personalMangercenter : {
         toBaseInfoViewUrl : '',
         toPayInfoViewUrl :'',
@@ -42,7 +48,9 @@ var prodUrl = {
         uploadHeadUrl :'',
         uploadAnthUrl :'',
         collectionInfoUrl:'',
-        incomeInfoUrl:''
+        incomeInfoUrl:'',
+        applyForInfoUrl:""
+
     },
     companyMangercenter : {
         toBaseInfoViewUrl : '',
@@ -58,7 +66,8 @@ var prodUrl = {
         projectInfoUrl:'',
         invoiceInfoUrl:'',
         costCenterInfoUrl:basePath +'/user/money',
-        uploadHeadUrl :''
+        uploadHeadUrl :'',
+        companyInfoUrl:''
     }
 };
 
@@ -86,7 +95,8 @@ var debugUrl = {
     common:{
         toWithdrawalUrl : basePath +'/html/mangercenter/withdrawal.html',
         jobInfoUrl : basePath +"/json/job.json",
-        cityInfoUrl:basePath +"/json/city.json"
+        cityInfoUrl:basePath +"/json/city.json",
+        skillsUrl:basePath +"/json/skills.json"
     },
     personalMangercenter : {
         toBaseInfoViewUrl : basePath +'/html/mangercenter/personal/baseInfoView.html',
@@ -106,7 +116,8 @@ var debugUrl = {
         uploadHeadUrl :basePath +'/json/request.json',
         uploadAnthUrl : basePath +'/json/request.json',
         collectionInfoUrl:basePath +"/json/myCollection.json",
-        incomeInfoUrl:basePath +"/json/myCollection.json"
+        incomeInfoUrl:basePath +"/json/myCollection.json",
+        applyForInfoUrl:basePath +"/json/applyForInfo.json"
     },
     companyMangercenter : {
         toBaseInfoViewUrl : basePath +'/html/mangercenter/company/baseInfoView.html',
@@ -122,7 +133,8 @@ var debugUrl = {
         projectInfoUrl:basePath +'/json/myCollection.json',
         invoiceInfoUrl:basePath +'/json/myCollection.json',
         costCenterInfoUrl:basePath +'/json/myCollection.json',
-        uploadHeadUrl :basePath +'/json/request.json'
+        uploadHeadUrl :basePath +'/json/request.json',
+        companyInfoUrl:basePath +'/json/applyForInfo.json'
     }
 };
 

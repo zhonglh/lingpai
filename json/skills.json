@@ -1,0 +1,9 @@
+{
+	"success":"ok",
+	"data":{
+		"110101":["java","php","js","java","php","js","java","php","js","java","php","js","java","php","js"],
+		"110102":["html","vue","js","html","vue","js","html","vue","js","html","vue","js","html","vue","js"],
+		"110201":["react","vue","js","html","vue","js","html","vue","js","html","vue","js","html","vue","js"],
+		"120101":["jquery","vue","js","html","vue","js","html","vue","js","html","vue","js","html","vue","js"]
+	}
+}

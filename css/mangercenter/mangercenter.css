@@ -91,15 +91,15 @@ option{line-height: 28px;display: inline-block;}
 .skills{margin-top:26px;}
 .skills span{font-size:18px;}
 .skillsUl{margin-left:90px;margin-top:-24px;width:580px;font-size:0;}
-.skillsUl li{cursor:pointer;font-size:16px;margin-bottom:16px;display:inline-block;text-align:center;line-height:30px;width:70px;height:30px;border:1px solid rgb(168, 161, 161);color:rgb(168, 161, 161);border-radius: 4px;margin-right:20px;}
+.skillsUl li{cursor:pointer;font-size:16px;margin-bottom:16px;display:inline-block;text-align:center;line-height:30px;height:30px;border:1px solid rgb(168, 161, 161);color:rgb(168, 161, 161);border-radius: 4px;margin-right:20px;}
 .jobWant .addExperienceBut,.addExperienceBut{cursor:pointer;width:auto;margin-top:25px;margin-bottom: 10px; display:inline-block;color:rgb(63, 81, 181);border:1px solid rgb(63, 81, 181);font-size:18px;padding:0 15px;height:33px;line-height:33px;text-align:center;border-radius: 4px}
 .addJobBtn{border-radius:4px;font-size:18px;margin-top:50px;border:1px solid rgb(63, 81, 181);width:198px;text-align:center;height:33px;line-height:33px;color:rgb(63, 81, 181);}
 .educationName,.jobWant select{vertical-align: middle;margin-right:20px;width:213px;padding:0 8px;height:32px;font-size:14px;border-radius: 4px;}
 .educationName{width:253px;}
 .jobWant span{width:102px;display: inline-block;}
 .jobWant .timeJob{width:70px;}
-.jobWant .skillsUl{margin-left:107px;margin-top:-44px;line-height: 0}
-.jobWant .skillsUl li{margin-bottom:10px;}
+.jobWant .skillsUl{margin-left:107px;margin-top:-44px;line-height: 0;min-height:50px;}
+.jobWant .skillsUl li{margin-bottom:10px;min-width: 60px;padding: 0 5px}
 .jobWant .jobWay{width: 18px;}
 .jobWant label{margin-right:30px;}
 .jobWant .skills{margin-top:0;}

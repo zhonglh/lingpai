@@ -6,16 +6,6 @@ var DEBUG = true;
 var COOKIE_MOBILE = "mobile";
 var DEFAULT_LIMIT = 10;
 
-function switchGrey(layerName){
-	if(!DEBUG){
-		if(layerName) closeWindow(layerName);
-		showLoading();
-		hideLoading();
-		showSuccess("操作成功");		
-		return true;
-	}
-	return false;
-}
 
 //弹出层
 function openWindow(obj){

@@ -10,10 +10,6 @@ function getAjaxAsync(url,data,callback){
 }
 //post同步
 function postAjaxSync(url,data,callback){
-	if(DEBUG){
-		getAjaxAsync(url,data,callback);
-		return;
-	}
 	var opts = {url:url,data:data,async:false,callback:callback}
 	ajax(opts);
 }
@@ -36,7 +32,6 @@ function postAjaxAsync(url,data,callback){
  * @returns {boolean}
  */
 function submitAjaxHandler(url,data,callback,layerObj){
-    if(switchGrey(layerObj)) return;
     postAjaxAsync(url,data,callback);
 }
 
